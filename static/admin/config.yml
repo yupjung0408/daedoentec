@@ -39,9 +39,6 @@ collections:
             required: false
             default: 0
             value_type: 'int'
-          - label: '본문'
-            name: 'body'
-            widget: 'markdown'
           - label: 'Draft'
             name: 'draft'
             widget: 'boolean'
@@ -81,9 +78,6 @@ collections:
             required: false
             media_folder: '/static/files'
             public_folder: '/files'
-          - label: '본문'
-            name: 'body'
-            widget: 'markdown'
           - label: 'Draft'
             name: 'draft'
             widget: 'boolean'
