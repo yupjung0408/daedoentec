@@ -31,7 +31,8 @@
 
 <!-- //e: cs-visual  -->
 
-{{ $perPage := 4 }} {{ $paginator := .Paginate .Pages $perPage }}
+{{ $perPage := 4 }} {{ $resources := where .Site.RegularPages "Section" "resources" }} {{ $paginator := .Paginate
+$resources $perPage }}
 <!-- 한페이지에 자료실 최대 4개 -->
 
 <section class="resources">
