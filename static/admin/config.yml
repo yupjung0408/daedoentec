@@ -4,18 +4,36 @@ backend:
 media_folder: static/uploads
 public_folder: /uploads
 collections:
-    - name: notice
-      label: 공지사항
-      folder: content/notice
+    - name: 'notice'
+      label: '공지사항'
+      folder: 'content/notice'
       create: true
       slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
       fields:
-          - label: 제목
-            name: title
-            widget: string
-          - label: 날짜
-            name: date
-            widget: datetime
-          - label: 본문
-            name: body
-            widget: markdown
+          - label: '제목'
+            name: 'title'
+            widget: 'string'
+          - label: '날짜'
+            name: 'date'
+            widget: 'datetime'
+          - label: '설명'
+            name: 'desc'
+            widget: 'string'
+          - label: '첨부파일'
+            name: 'file'
+            widget: 'file'
+            required: false
+            media_folder: '/static/files'
+            public_folder: '/files'
+          - label: '이미지'
+            name: 'img'
+            widget: 'image'
+            required: false
+          - label: '조회수'
+            name: 'views'
+            widget: 'number'
+            required: false
+            default: 0
+          - label: '본문'
+            name: 'body'
+            widget: 'markdown'
