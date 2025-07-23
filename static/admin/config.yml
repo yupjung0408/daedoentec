@@ -6,48 +6,86 @@ media_folder: static/uploads
 public_folder: /uploads
 
 collections:
-    # 1. 공지사항(Notice)
     - name: 'notice'
       label: '공지사항'
       folder: 'content/notice'
       create: true
       slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
       fields:
-          - { label: '제목', name: 'title', widget: 'string' }
-          - { label: '작성일', name: 'date', widget: 'datetime', format: 'YYYY-MM-DD' }
-          - { label: '설명', name: 'desc', widget: 'string', required: false }
-          - {
-                label: '첨부파일',
-                name: 'file',
-                widget: 'file',
-                required: false,
-                media_folder: '/static/files',
-                public_folder: '/files',
-            }
-          - { label: '이미지', name: 'img', widget: 'image', required: false }
-          - { label: '조회수', name: 'views', widget: 'number', required: false, default: 0, value_type: 'int' }
-          - { label: '본문', name: 'body', widget: 'markdown' }
-          - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
+          - label: '제목'
+            name: 'title'
+            widget: 'string'
+          - label: '작성일'
+            name: 'date'
+            widget: 'datetime'
+            format: 'YYYY-MM-DD'
+          - label: '설명'
+            name: 'desc'
+            widget: 'string'
+            required: false
+          - label: '첨부파일'
+            name: 'file'
+            widget: 'file'
+            required: false
+            media_folder: '/static/files'
+            public_folder: '/files'
+          - label: '이미지'
+            name: 'img'
+            widget: 'image'
+            required: false
+          - label: '조회수'
+            name: 'views'
+            widget: 'number'
+            required: false
+            default: 0
+            value_type: 'int'
+          - label: '본문'
+            name: 'body'
+            widget: 'markdown'
+          - label: 'Draft'
+            name: 'draft'
+            widget: 'boolean'
+            default: false
+            required: false
 
-    # 2. 자료실(Resources)
     - name: 'resources'
       label: '자료실'
       folder: 'content/resources'
       create: true
       slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
       fields:
-          - { label: '제목', name: 'title', widget: 'string' }
-          - { label: '작성일', name: 'date', widget: 'datetime', format: 'YYYY-MM-DD' }
-          - { label: '설명', name: 'desc', widget: 'string', required: false }
-          - { label: '조회수', name: 'views', widget: 'number', required: false, default: 0, value_type: 'int' }
-          - { label: '이미지', name: 'img', widget: 'image', required: false }
-          - {
-                label: '첨부파일',
-                name: 'file',
-                widget: 'file',
-                required: false,
-                media_folder: '/static/files',
-                public_folder: '/files',
-            }
-          - { label: '본문', name: 'body', widget: 'markdown' }
-          - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
+          - label: '제목'
+            name: 'title'
+            widget: 'string'
+          - label: '작성일'
+            name: 'date'
+            widget: 'datetime'
+            format: 'YYYY-MM-DD'
+          - label: '설명'
+            name: 'desc'
+            widget: 'string'
+            required: false
+          - label: '조회수'
+            name: 'views'
+            widget: 'number'
+            required: false
+            default: 0
+            value_type: 'int'
+          - label: '이미지'
+            name: 'img'
+            widget: 'image'
+            required: false
+          - label: '첨부파일'
+            name: 'file'
+            widget: 'file'
+            required: false
+            media_folder: '/static/files'
+            public_folder: '/files'
+          - label: '본문'
+            name: 'body'
+            widget: 'markdown'
+          - label: 'Draft'
+            name: 'draft'
+            widget: 'boolean'
+            default: false
+            required: false
