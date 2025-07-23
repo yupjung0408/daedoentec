@@ -1,0 +1,4 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'ko'
+title = '대도엔텍'
+theme = ""

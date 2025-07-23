@@ -1,0 +1,91 @@
+{{ define "css" }}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<link rel="stylesheet" href="/css/product.css" />
+{{ end }} {{ define "js" }}
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+<script src="/js/ani.js" defer></script>
+{{ end }} {{ define "main" }}
+
+<section class="product-visual">
+    <div class="container">
+        <div class="product-visul-top">
+            <div class="product-title">
+                <h2 class="ani">제품</h2>
+                <strong class="ani-2">
+                    ㈜대도엔텍, <br />
+                    재해 예방을 위한 최고의 선택
+                </strong>
+            </div>
+
+            <ul class="product-tabmenu ani-2">
+                <li><a href="/product/movable-weir/">가동보</a></li>
+                <li><a class="active" href="/product/product2-1/">홍수방어벽</a></li>
+                <li><a href="/product/movable-weir/">홍수방어문</a></li>
+                <li><a href="/product/movable-weir/">수문</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="product-visual-bg ani-3">
+        <img src="/images/product/product-visual-bg2.png" alt="bg" />
+    </div>
+</section>
+
+<!-- //e: product-visual  -->
+
+<section class="product-sec flood-barrier planter-type-flood-barrier">
+    <div class="container">
+        <div class="flood-barrier-info">
+            <div class="flood-barrier-title">
+                <!-- <strong>Rubber Dam</strong> -->
+                <h3 data-aos="fade-up">화단형홍수방어벽</h3>
+            </div>
+
+            <ul class="flood-barrier-tab-menu" data-aos="fade-up" data-aos-delay="300">
+                <li><a href="/product/product2-1/">투명홍수방어벽</a></li>
+                <li><a class="active" href="/product/product2-2/">화단형홍수방어벽</a></li>
+                <li><a href="/product/product2-3/">지주식홍수방어벽</a></li>
+            </ul>
+        </div>
+
+        <div class="flood-barrier-subtitle product-sec-subtitle">
+            <h4 data-aos="fade-up" data-aos-delay="500">
+                <span>제방고 부족 구간만큼 화단이 결합된 홍수방어벽을 설치하여</span> <br />
+                홍수범람을 방지하고 도시 경관성을 개선하는 역할을 하는 공법
+            </h4>
+
+            <figure data-aos="fade-up" data-aos-delay="500">
+                <img src="/images/product/flood-barrier2-sec1-pic.png" alt="화단형홍수방어벽" />
+            </figure>
+        </div>
+    </div>
+</section>
+
+<!-- //e: sec1 -->
+
+<section class="product-sec planter-type-flood-barrier-features">
+    <div class="container">
+        <div class="product-sec-subtitle">
+            <h4 data-aos="fade-up">
+                <span>기본 구조 및</span> <br />
+                주요 특징을 소개합니다.
+            </h4>
+
+            <p data-aos="fade-up" data-aos-delay="300">
+                - <span>식재부+방벽부+기초부</span>가 <span>일체형</span>으로 결합되어
+                <span>외력에 대해 안전</span>
+                <br />
+                - 화분박스의 과열로 인한 식재의 말라죽음을 예방하기 위하여 화분박스의 외벽 내부에 AIR GAP을 형성 <br />
+                - 토목공사 필요 없이 자체 중량에 의한 안전성 확보 (필요시 말뚝 또는 파일 시공)
+            </p>
+        </div>
+
+        <figure data-aos="fade-up" data-aos-delay="500">
+            <img src="/images/product/flood-barrier2-sec2-pic.png" alt="기본 구조 및 주요 특징을 소개합니다." />
+        </figure>
+    </div>
+</section>
+
+<!-- //e: sec2 -->
+
+{{ end }}

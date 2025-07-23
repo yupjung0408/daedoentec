@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teches on 대도엔텍</title>
+    <link>http://localhost:1313/tech/</link>
+    <description>Recent content in Teches on 대도엔텍</description>
+    <generator>Hugo</generator>
+    <language>ko</language>
+    <lastBuildDate>Tue, 22 Jul 2025 13:55:36 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech</title>
+      <link>http://localhost:1313/tech/tech/</link>
+      <pubDate>Tue, 22 Jul 2025 13:55:36 +0900</pubDate>
+      <guid>http://localhost:1313/tech/tech/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

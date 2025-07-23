@@ -1,0 +1,118 @@
+{{ define "css" }}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<link rel="stylesheet" href="/css/company.css" />
+{{ end }} {{ define "js" }}
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+<script src="/js/ani.js" defer></script>
+{{ end }} {{ define "main" }}
+
+<section class="company-visual">
+    <div class="container">
+        <div class="conpany-visul-top">
+            <div class="company-title">
+                <h2 class="ani">회사소개</h2>
+                <strong class="ani-2">
+                    Since 2003 <br />
+                    기술 제일을 추구합니다.
+                </strong>
+            </div>
+            <ul class="company-tabmenu ani-2">
+                <li><a class="active" href="/company/greeting/">인사말</a></li>
+                <li><a href="/company/ci/">CI</a></li>
+                <li><a href="/company/location/">오시는길</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="company-visual-bg ani-3">
+        <img src="/images/company/company-visual-bg1.png" alt="bg" />
+    </div>
+</section>
+
+<!-- //e: company-visual  -->
+
+<section class="company-history">
+    <div class="container">
+        <div class="history-title">
+            <h3 data-aos="fade-up"><span>단단하게 걸어온 역사</span> <br />기술 제일을 추구합니다.</h3>
+            <ul class="history-list" data-aos="fade-up" data-aos-delay="300">
+                <li>
+                    <dl>
+                        <dt>2003년 설립</dt>
+                        <dd>
+                            ㈜대도엔텍은 2003년 설립 이래 기계설비 <br />
+                            및 하천 수리구조물 분야의 기술 진보를 추구해 <br />
+                            왔습니다.
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>재해 예방&수자원 환경 분야</dt>
+                        <dd>
+                            그간 축적된 기술력과 경험을 바탕으로 <br />
+                            재해 예방과 수자원 환경 분야를 <br />중심으로 도약을 하고 있습니다.
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>글로벌 기업</dt>
+                        <dd>
+                            고객에게 신뢰받는 기업, 최고를 향한 <br />
+                            열정과 신뢰, 인류의 삶의 질 향상으로 <br />
+                            사랑받는 글로벌 기업
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- //e: company-history -->
+
+<section class="company-greeting">
+    <div class="container">
+        <div class="company-greeting-title">
+            <h4 data-aos="fade-up">
+                <span>환경을 우선시하는 전 세계 하천관리의 큰 흐름은 <br /></span> 우리에게도 많은 도전과 과제를
+                던져주고 있습니다.
+            </h4>
+
+            <div class="company-greeting-text" data-aos="fade-up" data-aos-delay="300">
+                <strong
+                    >㈜대도엔텍은 초지일관 기술 제일의 신념으로 친환경적이고 생태친화적인 수자원 관리 기술의 개발에
+                    매진하여 왔습니다.</strong
+                >
+                <p>
+                    앞으로도 저희 임직원은 환경성, 안정성, 내구성, 경제성을 바탕으로 우리나라 하천의 생태보전과 수자원의
+                    효율적 관리, 자연경관과<br />
+                    어울리는 참심한 가동보의 개발과 보급을 위해 최선을 다할 것입니다. 수자원 관계자 여러분의 끊임없는
+                    관심과 지도 편달을 부탁드립니다.
+                </p>
+            </div>
+
+            <em data-aos="fade-up" data-aos-delay="300">㈜대도엔텍 임직원 일동</em>
+        </div>
+
+        <ul class="company-icon-list">
+            <li data-aos="fade-up" data-aos-delay="400">
+                <p>안정성</p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="500">
+                <p>환경성</p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="600">
+                <p>내구성</p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="700">
+                <p>경제성</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- //e: company-greeting -->
+
+{{ end }}

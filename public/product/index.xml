@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Products on 대도엔텍</title>
+    <link>http://localhost:1313/product/</link>
+    <description>Recent content in Products on 대도엔텍</description>
+    <generator>Hugo</generator>
+    <language>ko</language>
+    <lastBuildDate>Tue, 22 Jul 2025 14:05:52 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/product/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Product2 3</title>
+      <link>http://localhost:1313/product/product2-3/</link>
+      <pubDate>Tue, 22 Jul 2025 14:05:52 +0900</pubDate>
+      <guid>http://localhost:1313/product/product2-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Product2 2</title>
+      <link>http://localhost:1313/product/product2-2/</link>
+      <pubDate>Tue, 22 Jul 2025 14:05:48 +0900</pubDate>
+      <guid>http://localhost:1313/product/product2-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Product2 1</title>
+      <link>http://localhost:1313/product/product2-1/</link>
+      <pubDate>Tue, 22 Jul 2025 14:05:43 +0900</pubDate>
+      <guid>http://localhost:1313/product/product2-1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hydraulic Weir</title>
+      <link>http://localhost:1313/product/hydraulic-weir/</link>
+      <pubDate>Tue, 22 Jul 2025 14:05:38 +0900</pubDate>
+      <guid>http://localhost:1313/product/hydraulic-weir/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Steel Weir</title>
+      <link>http://localhost:1313/product/steel-weir/</link>
+      <pubDate>Tue, 22 Jul 2025 14:05:26 +0900</pubDate>
+      <guid>http://localhost:1313/product/steel-weir/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Movable Weir</title>
+      <link>http://localhost:1313/product/movable-weir/</link>
+      <pubDate>Tue, 22 Jul 2025 14:04:28 +0900</pubDate>
+      <guid>http://localhost:1313/product/movable-weir/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

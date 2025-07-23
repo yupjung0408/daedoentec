@@ -1,0 +1,79 @@
+{{ define "css" }}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<link rel="stylesheet" href="/css/company.css" />
+{{ end }} {{ define "js" }}
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+<script src="/js/ani.js" defer></script>
+{{ end }} {{ define "main" }}
+
+<section class="company-visual">
+    <div class="container">
+        <div class="conpany-visul-top">
+            <div class="company-title">
+                <h2 class="ani">회사소개</h2>
+                <strong class="ani-2">
+                    Since 2003 <br />
+                    기술 제일을 추구합니다.
+                </strong>
+            </div>
+            <ul class="company-tabmenu ani-2">
+                <li><a href="/company/greeting/">인사말</a></li>
+                <li><a class="active" href="/company/ci/">CI</a></li>
+                <li><a href="/company/location/">오시는길</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="company-visual-bg ani-3">
+        <img src="/images/company/company-visual-bg2.png" alt="bg" />
+    </div>
+</section>
+
+<!-- //e: company-visual  -->
+
+<section class="ci-info">
+    <div class="container">
+        <div class="ci-title">
+            <h3 data-aos="fade-up">
+                <span>㈜대도엔텍 </span><br />
+                CI 소개
+            </h3>
+
+            <div class="ci-text">
+                <strong data-aos="fade-up" data-aos-delay="100">㈜대도엔텍 CI를 소개합니다.</strong>
+                <p data-aos="fade-up" data-aos-delay="300">
+                    앞으로도 저희 임직원은 환경성, 안정성, 내구성, 경제성을 바탕으로 우리나라 하천의 생태보전과 수자원의
+                    효율적 관리, 자연경관과 <br />
+                    어울리는 참심한 가동보의 개발과 보급을 위해 최선을 다할 것입니다. 수자원 관계자 여러분의 끊임없는
+                    관심과 지도 편달을 부탁드립니다.
+                </p>
+            </div>
+        </div>
+
+        <div class="ci-logo" data-aos="fade-up" data-aos-delay="500">
+            <h4>Logo</h4>
+            <div class="logo-box">
+                <div class="logo-height">
+                    <p>세로형</p>
+                    <img src="/images/company/logo_세로형_og.svg" alt="logo-세로형" />
+                </div>
+                <div class="logo-width">
+                    <p>가로형</p>
+                    <img src="/images/company/logo_가로형_수정.svg" alt="logo-가로형" />
+                </div>
+            </div>
+        </div>
+
+        <div class="ci-color-system" data-aos="fade-up" data-aos-delay="300">
+            <h4>Color System</h4>
+            <ul class="color-list">
+                <li><span>Blue</span><span>#006FBC</span></li>
+                <li><span>Blue</span><span>#00A0E9</span></li>
+                <li><span>Blue</span><span>#8FD3F5</span></li>
+                <li><span>Blue</span><span>#9FA0A0</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+{{ end }}

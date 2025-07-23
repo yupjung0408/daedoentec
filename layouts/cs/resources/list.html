@@ -1,0 +1,121 @@
+{{ define "css" }}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<link rel="stylesheet" href="/css/cs.css" />
+{{ end }} {{ define "js" }}
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+<script src="/js/ani.js" defer></script>
+{{ end }} {{ define "main" }}
+
+<section class="cs-visual">
+    <div class="container">
+        <div class="cs-visul-top">
+            <div class="cs-title">
+                <h2 class="ani">고객센터</h2>
+                <strong class="ani-2">
+                    Hello, Daedoentec <br />
+                    대도엔텍에서 알려드립니다.
+                </strong>
+            </div>
+            <ul class="cs-tabmenu ani-2">
+                <li><a href="/cs/notice/">공지사항</a></li>
+                <li><a href="/cs/inquiry/">고객문의</a></li>
+                <li><a class="active" href="/cs/resources/">자료실</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cs-visual-bg ani-3">
+        <img src="/images/cs/cs-visual-bg3.png" alt="bg" />
+    </div>
+</section>
+
+<!-- //e: cs-visual  -->
+
+{{ $perPage := 4 }} {{ $paginator := .Paginate .Pages $perPage }}
+<!-- 한페이지에 자료실 최대 4개 -->
+
+<section class="resources">
+    <div class="container">
+        <div class="resources-top">
+            <div class="resources-title">
+                <h3 data-aos="fade-up">
+                    <span>자료실</span> <br />
+                    다양한 제품 정보를 확인하세요.
+                </h3>
+            </div>
+
+            <div class="resources-search">
+                <div class="search-left">
+                    <button class="search-toggle">제목+내용</button>
+                </div>
+
+                <div class="search-right">
+                    <div class="search-input-wrap">
+                        <input type="text" placeholder="검색어를 입력해주세요." />
+                        <span class="search-icon"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="resources-bottom">
+            <div class="resources-list-total">
+                <p>Total <span>{{ $paginator.TotalPages }}</span></p>
+            </div>
+
+            <table class="resources-table">
+                <thead>
+                    <tr>
+                        <th class="col-no">번호</th>
+                        <th class="col-title">제목</th>
+                        <th class="col-date">작성일</th>
+                        <th class="col-views">조회수</th>
+                    </tr>
+                </thead>
+                <tbody id="resourcesTbody">
+                    {{ $startNo := add (sub $paginator.TotalNumberOfElements (mul (sub $paginator.PageNumber 1)
+                    $perPage)) 0 }} {{ range $i, $item := $paginator.Pages }}
+                    <tr>
+                        <td class="col-no">{{ sub $startNo $i }}</td>
+                        <td class="col-title">
+                            <a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>
+                        </td>
+                        <td class="col-date">{{ $item.Date.Format "2006-01-02" }}</td>
+                        <td class="col-views">{{ $item.Params.views | default 0 }}</td>
+                    </tr>
+                    {{ end }}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="resources-list-pagination">
+            {{/* --- 페이지네이션(공지사항과 동일한 3개 그룹 방식) --- */}} {{ $total := $paginator.TotalPages }} {{
+            $cur := $paginator.PageNumber }} {{ $pageArr := slice }} {{ if le $total 3 }} {{ range $i, $v := (seq 1
+            $total) }}{{ $pageArr = $pageArr | append $v }}{{ end }} {{ else if le $cur 2 }} {{ $pageArr = slice 1 2 3
+            }} {{ else if ge $cur (sub $total 1) }} {{ $pageArr = slice (sub $total 2) (sub $total 1) $total }} {{ else
+            }} {{ $pageArr = slice (sub $cur 1) $cur (add $cur 1) }} {{ end }} {{ $min := index $pageArr 0 }}
+            <a
+                class="pagination-prev"
+                href="{{ if gt $cur 1 }}{{ (index $paginator.Pagers (sub $cur 2)).URL }}{{ end }}"
+                style="color: {{ if gt $min 1 }}var(--logo-main){{ else }}var(--bk){{ end }};{{ if eq $cur 1 }} pointer-events: none; opacity: 0.5;{{ end }}"
+                id="btnPrev"
+                ><span></span
+            ></a>
+            <div class="btn-number" id="btnNumber">
+                {{ range $i, $p := $pageArr }} {{ $pager := index $paginator.Pagers (sub $p 1) }}
+                <a class="pagination-btn{{ if eq $cur $p }} active{{ end }}" href="{{ $pager.URL }}">{{ $p }}</a>
+                {{ end }}
+            </div>
+            {{ $max := (index $pageArr (sub (len $pageArr) 1)) }}
+            <a
+                class="pagination-next"
+                href="{{ if lt $cur $total }}{{ (index $paginator.Pagers $cur).URL }}{{ end }}"
+                style="color: {{ if lt $max $total }}var(--logo-main){{ else }}var(--bk){{ end }};{{ if eq $cur $total }} pointer-events: none; opacity: 0.5;{{ end }}"
+                id="btnNext"
+                ><span></span
+            ></a>
+        </div>
+    </div>
+</section>
+
+{{ end }}

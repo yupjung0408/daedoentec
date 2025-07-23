@@ -1,0 +1,108 @@
+{{ define "css" }}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<link rel="stylesheet" href="/css/cs.css" />
+{{ end }} {{ define "js" }}
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+<script src="/js/ani.js" defer></script>
+{{ end }} {{ define "main" }}
+
+<section class="cs-visual">
+    <div class="container">
+        <div class="cs-visul-top">
+            <div class="cs-title">
+                <h2 class="ani">고객센터</h2>
+                <strong class="ani-2">
+                    Hello, Daedoentec <br />
+                    대도엔텍에서 알려드립니다.
+                </strong>
+            </div>
+            <ul class="cs-tabmenu ani-2">
+                <li><a href="/cs/notice/">공지사항</a></li>
+                <li><a href="/cs/inquiry/">고객문의</a></li>
+                <li><a class="active" href="/cs/resources/">자료실</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cs-visual-bg ani-3">
+        <img src="/images/cs/cs-visual-bg3.png" alt="bg" />
+    </div>
+</section>
+
+<!-- //e: cs-visual  -->
+
+<section class="resources">
+    <div class="container">
+        <div class="resources-top">
+            <div class="resources-title">
+                <h3 data-aos="fade-up">
+                    <span>자료실</span> <br />
+                    다양한 제품 정보를 확인하세요.
+                </h3>
+            </div>
+        </div>
+
+        <div class="resources-view">
+            <div class="resources-view-title">
+                <h4>{{ .Title }}</h4>
+                <div class="resources-view-number">
+                    <p>{{ .Date.Format "2006-01-02" }}</p>
+                    <p>{{ .Params.views | default 0 }}</p>
+                </div>
+            </div>
+
+            <div class="resources-view-box">
+                {{ if .Params.img }}
+                <img src="{{ .Params.img }}" alt="{{ .Title }}" />
+                {{ end }}
+                <p>{{ .Params.desc }}</p>
+                {{ if .Params.file }}
+                <div class="resources-download">
+                    <a href="/files/{{ .Params.file }}" download>첨부파일: {{ .Params.file }}</a>
+                </div>
+                {{ end }}
+                <div>{{ .Content }}</div>
+            </div>
+
+            <!-- 이전글 -->
+            <div class="resources-view-prev">
+                {{ with .PrevInSection }}
+                <a class="view-prev-btn" href="{{ .RelPermalink }}">이전글</a>
+                <div class="resources-view-prev-title">
+                    <strong>{{ .Title }}</strong>
+                    <p>{{ .Date.Format "2006-01-02" }}</p>
+                </div>
+                {{ else }}
+                <button class="view-prev-btn" disabled>이전글</button>
+                <div class="resources-view-prev-title">
+                    <strong>이전글이 없습니다.</strong>
+                    <p></p>
+                </div>
+                {{ end }}
+            </div>
+
+            <!-- 다음글 -->
+            <div class="resources-view-next">
+                {{ with .NextInSection }}
+                <a class="view-next-btn" href="{{ .RelPermalink }}">다음글</a>
+                <div class="resources-view-next-title">
+                    <strong>{{ .Title }}</strong>
+                    <p>{{ .Date.Format "2006-01-02" }}</p>
+                </div>
+                {{ else }}
+                <button class="view-next-btn" disabled>다음글</button>
+                <div class="resources-view-next-title">
+                    <strong>다음글이 없습니다.</strong>
+                    <p></p>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+
+        <div class="back-list-btn">
+            <a href="/cs/resources/" class="btn">목록</a>
+        </div>
+    </div>
+</section>
+
+{{ end }}
