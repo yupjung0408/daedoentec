@@ -31,7 +31,7 @@
 
 <!-- //e: cs-visual  -->
 
-{{ $notices := where .Site.RegularPages "Section" "notice" }} {{ $paginator := .Paginate $notices 8 }}
+{{ $paginator := .Paginate .Pages 8 }}
 <!-- 한페이지에 공지li 최대8개 제한 -->
 
 <section class="notice">
