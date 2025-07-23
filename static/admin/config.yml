@@ -1,0 +1,16 @@
+backend:
+    name: git-gateway
+    branch: main # 또는 master (GitHub branch명과 일치해야 함)
+media_folder: 'static/uploads'
+public_folder: '/uploads'
+
+collections:
+    - name: 'notice' # 내부에서 사용하는 이름(영문)
+      label: '공지사항' # 관리자 UI에서 보이는 이름(한글 가능)
+      folder: 'content/notice' # 실제 글 파일이 저장되는 위치(Hugo 기준)
+      create: true
+      slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # 파일명 규칙
+      fields:
+          - { label: '제목', name: 'title', widget: 'string' }
+          - { label: '날짜', name: 'date', widget: 'datetime' }
+          - { label: '본문', name: 'body', widget: 'markdown' }
