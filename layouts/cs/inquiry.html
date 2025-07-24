@@ -43,56 +43,58 @@
             </div>
         </div>
 
-        <div class="inquiry-bottom">
-            <div class="inquiry-box">
-                <div class="user-info">
-                    <div class="user-name">
-                        <p>이름</p>
-                        <input type="text" placeholder="| 이름을 입력해주세요." />
+        <!-- === 폼 시작 === -->
+        <form name="contact" method="POST" data-netlify="true" enctype="multipart/form-data">
+            <input type="hidden" name="form-name" value="contact" />
+            <div class="inquiry-bottom">
+                <div class="inquiry-box">
+                    <div class="user-info">
+                        <div class="user-name">
+                            <p>이름</p>
+                            <input type="text" name="name" placeholder="| 이름을 입력해주세요." required />
+                        </div>
+                        <div class="user-corporate-name">
+                            <p>회사명</p>
+                            <input type="text" name="company" placeholder="| 회사명을 입력해주세요." />
+                        </div>
+                        <div class="user-email">
+                            <p>이메일</p>
+                            <input type="email" name="email" placeholder="| 이메일을 입력해주세요." required />
+                        </div>
+                        <div class="user-phone-number">
+                            <p>연락처</p>
+                            <input type="text" name="phone" placeholder="| 연락처를 입력해주세요." />
+                        </div>
                     </div>
-                    <div class="user-corporate-name">
-                        <p>회사명</p>
-                        <input type="text" placeholder="| 회사명을 입력해주세요." />
+                    <div class="inquiry-box-title">
+                        <p>제목</p>
+                        <input type="text" name="title" placeholder="| 제목을 입력해주세요." required />
                     </div>
-                    <div class="user-email">
-                        <p>이메일</p>
-                        <input type="text" placeholder="| 이메일을 입력해주세요." />
+                    <div class="inquiry-box-text">
+                        <p>문의내용</p>
+                        <textarea name="message" placeholder="| 문의하실 내용을 작성해주세요." required></textarea>
                     </div>
-                    <div class="user-phone-number">
-                        <p>연락처</p>
-                        <input type="text" placeholder="| 연락처를 입력해주세요." />
+                    <div class="inquiry-box-file">
+                        <p>첨부파일</p>
+                        <input type="file" name="attachment" id="file" />
+                        <div class="file-display">
+                            <span class="file-name">파일을 선택해주세요.</span>
+                            <label for="file" class="file-btn">파일 선택</label>
+                        </div>
                     </div>
-                </div>
-
-                <div class="inquiry-box-title">
-                    <p>제목</p>
-                    <input type="text" placeholder="| 제목을 입력해주세요." />
-                </div>
-                <div class="inquiry-box-text">
-                    <p>문의내용</p>
-                    <textarea name="문의내용" placeholder="| 문의하실 내용을 작성해주세요."></textarea>
-                </div>
-                <div class="inquiry-box-file">
-                    <p>첨부파일</p>
-                    <input type="file" id="file" />
-                    <div class="file-display">
-                        <span class="file-name">파일을 선택해주세요.</span>
-                        <label for="file" class="file-btn">파일 선택</label>
+                    <div class="inquiry-box-prevent">
+                        <p>자동입력방지</p>
+                        <span class="prevent-img"></span>
+                        <input type="text" name="antispam" />
+                        <span class="prevent-text">좌측에 보이는 문자를 그대로 입력해주세요.</span>
                     </div>
-                </div>
-
-                <div class="inquiry-box-prevent">
-                    <p>자동입력방지</p>
-                    <span class="prevent-img"></span>
-                    <input type="text" />
-                    <span class="prevent-text">좌측에 보이는 문자를 그대로 입력해주세요.</span>
                 </div>
             </div>
-        </div>
-
-        <div class="inquire-btn">
-            <button>문의하기</button>
-        </div>
+            <div class="inquire-btn">
+                <button type="submit">문의하기</button>
+            </div>
+        </form>
+        <!-- === 폼 끝 === -->
     </div>
 </section>
 
