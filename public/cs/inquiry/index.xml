@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>고객문의 | 고객센터 | DAEDO ENTEC on 대도엔텍</title>
+    <link>http://localhost:1313/cs/inquiry/</link>
+    <description>Recent content in 고객문의 | 고객센터 | DAEDO ENTEC on 대도엔텍</description>
+    <generator>Hugo</generator>
+    <language>ko</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/cs/inquiry/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

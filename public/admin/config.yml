@@ -1,0 +1,85 @@
+backend:
+    name: git-gateway
+    branch: main
+
+media_folder: static/uploads
+public_folder: /uploads
+
+collections:
+    - name: 'notice'
+      label: '공지사항'
+      folder: 'content/cs/notice'
+      create: true
+      slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+      fields:
+          - label: '제목'
+            name: 'title'
+            widget: 'string'
+          - label: '작성일'
+            name: 'date'
+            widget: 'datetime'
+            format: 'YYYY-MM-DD'
+          - label: '설명'
+            name: 'desc'
+            widget: 'text'
+            required: false
+          - label: '첨부파일'
+            name: 'file'
+            widget: 'file'
+            required: false
+            media_folder: '/static/files'
+            public_folder: '/files'
+          - label: '이미지'
+            name: 'img'
+            widget: 'image'
+            required: false
+          - label: '조회수'
+            name: 'views'
+            widget: 'number'
+            required: false
+            default: 0
+            value_type: 'int'
+          - label: 'Draft'
+            name: 'draft'
+            widget: 'boolean'
+            default: false
+            required: false
+
+    - name: 'resources'
+      label: '자료실'
+      folder: 'content/cs/resources'
+      create: true
+      slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+      fields:
+          - label: '제목'
+            name: 'title'
+            widget: 'string'
+          - label: '작성일'
+            name: 'date'
+            widget: 'datetime'
+            format: 'YYYY-MM-DD'
+          - label: '설명'
+            name: 'desc'
+            widget: 'text'
+            required: false
+          - label: '조회수'
+            name: 'views'
+            widget: 'number'
+            required: false
+            default: 0
+            value_type: 'int'
+          - label: '이미지'
+            name: 'img'
+            widget: 'image'
+            required: false
+          - label: '첨부파일'
+            name: 'file'
+            widget: 'file'
+            required: false
+            media_folder: '/static/files'
+            public_folder: '/files'
+          - label: 'Draft'
+            name: 'draft'
+            widget: 'boolean'
+            default: false
+            required: false
