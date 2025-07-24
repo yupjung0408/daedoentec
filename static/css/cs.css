@@ -767,6 +767,12 @@ input:focus {
     color: var(--fff);
 }
 
+/* input 입력할 때 배경색 생기지 않도록 */
+.inquiry-box input:focus,
+.inquiry-box textarea:focus {
+    background: none !important;
+}
+
 /* //e: inquiry */
 
 /* s: resources */
