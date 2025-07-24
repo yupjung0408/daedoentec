@@ -7,12 +7,11 @@
         <title>{{ .Title | default "DAEDO ENTEC" }}</title>
 
         <!-- Meta Description -->
-        <meta name="description" content="{{ .Params.description | default "기후변화에 대응하는 스마트 수자원 방재 기술
-        - ㈜대도엔텍은 고무보, 수문 등 수리구조물 분야에서 최고의 기술을 제공합니다." }}" />
+        <meta name="description" content="{{ .Params.description | default "기후변화에 대응하는 스마트 수자원 방재 기술" }}" />
 
         <!-- Keywords -->
-        <meta name="keywords" content="{{ .Params.keywords | default "대도엔텍, 고무보, 수문, 방재 기술, 스마트 수자원,
-        기계설비, 하천 구조물" }}" />
+        <meta name="keywords" content="{{ .Params.keywords | default "대도엔텍, 고무보, 수문, 방재 기술, 스마트 수자원, 기계설비, 하천
+        구조물" }}" />
 
         <!-- Author -->
         <meta name="author" content="{{ .Params.author | default "㈜대도엔텍" }}" />
@@ -21,8 +20,8 @@
         <meta property="og:type" content="website" />
         <meta property="og:title" content="{{ .Params.og_title | default .Title }}" />
         <meta property="og:description" content="{{ .Params.og_description | default .Params.description }}" />
-        <meta property="og:image" content="{{ .Params.og_image | default "/images/main/info-bg-big.png" }}" /> <meta
-        property="og:url" content="{{ .Params.og_url | default ( printf "%s" .Permalink ) }}" />
+        <meta property="og:image" content="{{ .Params.og_image | default "/images/main/info-bg-big.png" }}" /> <meta property="og:url"
+        content="{{ .Params.og_url | default ( printf "%s" .Permalink ) }}" />
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="/css/reset.css" />
