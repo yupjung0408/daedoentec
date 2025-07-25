@@ -1,0 +1,123 @@
+{{ define "css" }}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<link rel="stylesheet" href="/css/product.css" />
+{{ end }} {{ define "js" }}
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+<script src="/js/ani.js" defer></script>
+{{ end }} {{ define "main" }}
+
+<section class="product-visual">
+    <div class="container">
+        <div class="product-visul-top">
+            <div class="product-title">
+                <h2 class="ani">제품</h2>
+                <strong class="ani-2">
+                    ㈜대도엔텍, <br />
+                    재해 예방을 위한 최고의 선택
+                </strong>
+            </div>
+
+            <ul class="product-tabmenu ani-2">
+                <li><a href="/product1-1/">가동보</a></li>
+                <li><a href="/product2-1/">홍수방어벽</a></li>
+                <li><a class="active" href="/product3-1/">자동침수방어벽</a></li>
+                <li><a href="#">수문</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="product-visual-bg ani-3">
+        <img src="/images/product/product-visual-bg3.png" alt="bg" />
+    </div>
+</section>
+
+<!-- //e: product-visual  -->
+
+<section class="product-sec automatic-flood-barrier">
+    <div class="container">
+        <div class="automatic-flood-barrier-info">
+            <div class="automatic-flood-barrier-title">
+                <!-- <strong>Rubber Dam</strong> -->
+                <h3 data-aos="fade-up">슬라이딩침수방어벽</h3>
+            </div>
+
+            <ul class="automatic-flood-barrier-tab-menu" data-aos="fade-up" data-aos-delay="300">
+                <li><a href="/product3-1/">기립식침수방어벽</a></li>
+                <li><a class="active" href="/product3-2/">슬라이딩침수방어벽</a></li>
+            </ul>
+        </div>
+
+        <div class="automatic-flood-barrier-subtitle product-sec-subtitle">
+            <h4 data-aos="fade-up" data-aos-delay="500">
+                <span>랙바 구동장치로 좌우로</span> <br />
+                개폐되는 자동 침수방어벽
+            </h4>
+
+            <p data-aos="fade-up" data-aos-delay="700">- 서울시 광장동 포제스 한강 오피스텔 (2.0mH x 4.0mL)</p>
+
+            <figure data-aos="fade-up" data-aos-delay="500">
+                <img src="/images/product/product3-2-sec1-pic1.png" alt="슬라이딩침수방어벽" />
+            </figure>
+        </div>
+    </div>
+</section>
+
+<!-- //e: sec1 -->
+
+<section class="product-sec sliding-flood-barrier-sec2">
+    <div class="container">
+        <div class="product-sec-subtitle">
+            <h4 data-aos="fade-up">
+                <span>공법 개요</span>
+            </h4>
+        </div>
+
+        <figure data-aos="fade-up" data-aos-delay="300">
+            <img src="/images/product/product3-2-sec2-pic1.png" alt="공법 개요" />
+        </figure>
+    </div>
+</section>
+
+<!-- //e: sec2 -->
+
+<section class="product-sec sliding-flood-barrier-operating">
+    <div class="container">
+        <div class="product-sec-subtitle">
+            <h4 data-aos="fade-up"><span>작동원리</span></h4>
+        </div>
+
+        <ul class="operating-info" data-aos="fade-up" data-aos-delay="300">
+            <li>
+                <img src="/images/product/product3-2-sec3-pic1.png" alt="차수문 열림 시" />
+                <p>차수문 열림 시</p>
+            </li>
+            <li>
+                <img src="/images/product/product3-2-sec3-pic2.png" alt="차수문 닫힘 시" />
+                <p>차수문 닫힘 시</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bg-layer"></div>
+</section>
+
+<!-- //e: sec3 -->
+
+<section class="product-sec automatic-flood-barrier-diagram">
+    <div class="container">
+        <div class="product-sec-subtitle">
+            <h4 data-aos="fade-up">
+                <span>자동침수방어벽</span> <br />
+                제품 구성도
+            </h4>
+        </div>
+
+        <figure data-aos="fade-up" data-aos-delay="300">
+            <img src="/images/product/product3-2-sec4-pic1.png" alt="자동침수방어벽 제품 구성도" />
+        </figure>
+    </div>
+</section>
+
+<!-- //e: sec4 -->
+
+{{ end }}
