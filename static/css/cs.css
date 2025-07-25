@@ -449,6 +449,7 @@ input:focus {
 .notice-view-box {
     padding: 6rem 2.4rem;
     border-bottom: 1px solid var(--ddd);
+    max-width: 144rem;
 }
 
 .notice-view-box p {
@@ -460,7 +461,6 @@ input:focus {
 }
 
 .notice-view-box img {
-    max-width: 144rem;
     object-fit: contain;
 }
 
@@ -738,11 +738,6 @@ input:focus {
     height: 5.2rem;
     background: url('/images/cs/prevent.png') no-repeat 50%;
 } */
-
-.prevent {
-    width: 10.4rem;
-    height: 5.2rem;
-}
 
 .inquiry-box-prevent input {
     width: 18rem;
@@ -1113,6 +1108,11 @@ td {
 .resources-view-box {
     padding: 6rem 2.4rem;
     border-bottom: 1px solid var(--ddd);
+    max-width: 144rem;
+}
+
+.resources-view-box img {
+    object-fit: contain;
 }
 
 .resources-view-box p {
