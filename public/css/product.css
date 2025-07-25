@@ -353,6 +353,44 @@ main {
     color: var(--gray);
 }
 
+/* s: rubber-dam-patent */
+
+.rubber-dam-patent {
+    margin-top: 10rem;
+    display: flex;
+    gap: 4.8rem;
+}
+
+.rubber-dam-patent li {
+    width: 32.4rem;
+    height: 41rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rubber-dam-patent li img {
+    width: 21.2rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.rubber-dam-patent li p {
+    margin-top: 2.4rem;
+    font-size: var(--p-18-size);
+    font-weight: var(--p-18-sb-weight);
+    line-height: var(--p-18-line-height);
+    color: var(--bk);
+}
+
+.rubber-dam-patent li span {
+    margin-top: 1.2rem;
+    font-size: var(--p-16-size);
+    font-weight: var(--p-16-weight);
+    line-height: var(--p-16-line-height);
+    color: var(--gray);
+}
+
 /* s: product-sec3 */
 
 .product-sec-process {
@@ -675,7 +713,7 @@ main {
     align-items: center;
 }
 
-/* //e: hydraulic-weir */
+/* //e: product1-3 */
 
 /* //e: movable-weir */
 
@@ -839,22 +877,44 @@ main {
     line-height: var(--p-16-line-height);
 }
 
-.flood-barrier-main-title-top::after {
-    margin-top: 10rem;
-    content: '';
+.flood-barrier-main-title-mid {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.down-arrow span {
     display: block;
     width: 4rem;
     height: 6rem;
     background: url(/images/product/flood-barrier1-sec1-ico-arrow.svg) no-repeat 50%;
 }
 
+.mid-box {
+    width: 30.5rem;
+    height: 9.2rem;
+    background: var(--logo-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-box strong {
+    font-size: var(--sub-title-32-size);
+    font-weight: var(--sub-title-32-weight);
+    line-height: var(--sub-title-32-line-height);
+    color: var(--fff);
+}
+
 .flood-barrier-main-title-bottom {
-    margin-top: 10rem;
+    margin-top: 6rem;
     text-align: center;
 }
 
 .flood-barrier-main-title-bottom figure {
-    margin-top: 10rem;
     width: 100%;
     height: 62rem;
 }
@@ -863,6 +923,10 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.flood-barrier-main-title-bottom h4 {
+    margin-top: 6rem;
 }
 
 /* //e: product2-1 sec-1 */
@@ -1098,9 +1162,14 @@ main {
 
 /* //e: table */
 
-.safety-review-con1::after {
+.mid-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-line span {
     margin-top: 10rem;
-    content: '';
     display: block;
     width: 0.1rem;
     height: 8rem;
@@ -1279,7 +1348,7 @@ main {
     position: relative;
 }
 
-.custom-table-wrap {
+.flood-barrier-comparsion-table-wrap {
     margin-top: 10rem;
     overflow: hidden;
 
@@ -1290,36 +1359,36 @@ main {
     align-items: center;
 }
 
-.custom-table {
+.flood-barrier-comparsion-table {
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
 }
 
-.custom-table th,
-.custom-table td {
+.flood-barrier-comparsion-table th,
+.flood-barrier-comparsion-table td {
     text-align: center;
     vertical-align: middle;
     padding: 2.4rem;
     border-right: 1px solid var(--logo-sub-02);
 }
 
-.custom-table td {
+.flood-barrier-comparsion-table td {
     font-size: var(--p-16-size);
     font-weight: var(--p-16-weight);
     line-height: var(--p-16-line-height);
     color: var(--bk);
 }
 
-.custom-table td:last-child {
+.flood-barrier-comparsion-table td:last-child {
     border-right: none;
 }
 
-.custom-table tr {
+.flood-barrier-comparsion-table tr {
     border-bottom: 1px solid var(--logo-sub-02);
 }
 
-.custom-table thead th {
+.flood-barrier-comparsion-table thead th {
     background: var(--logo-sub-01);
     font-size: var(--p-18-size);
     font-weight: var(--p-18-sb-weight);
@@ -1327,11 +1396,11 @@ main {
     color: #fff;
 }
 
-.custom-table .th-main {
+.flood-barrier-comparsion-table .th-main {
     width: 14.4rem;
 }
 
-.custom-table .th-row {
+.flood-barrier-comparsion-table .th-row {
     background: var(--bg-02);
     color: var(--logo-sub-01);
     font-size: var(--p-18-size);
@@ -1340,20 +1409,16 @@ main {
     width: 14.4rem;
 }
 
-.custom-table img {
+.flood-barrier-comparsion-table img {
     display: block;
     width: 34.2rem;
     height: 26rem;
     margin: 0 auto 1.2rem;
 }
 
-.custom-table-wrap::after {
-    margin-top: 10rem;
-    content: '';
-    display: block;
-    width: 0.1rem;
-    height: 8rem;
-    background: var(--logo-sub-02);
+.flood-barrier-comparsion-table span {
+    font-weight: var(--p-16-sb-weight);
+    color: var(--logo-sub-01);
 }
 
 .flood-barrier-comparsion-text {
@@ -1381,3 +1446,368 @@ main {
     left: 0;
     z-index: -1;
 }
+
+/* //e: product2-3 */
+
+/* //e: flood-barrier */
+
+/* s: automatic-flood-barrier */
+
+.automatic-flood-barrier-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.automatic-flood-barrier-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.automatic-flood-barrier-title strong {
+    font-size: var(--p-14-size);
+    font-weight: var(--p-14-sb-weight);
+    line-height: var(--p-14-line-height);
+    color: var(--logo-sub-02);
+}
+
+.automatic-flood-barrier-title h3 {
+    margin-top: 1.2rem;
+    font-size: var(--sub-title-48-size);
+    font-weight: var(--sub-title-48-weight);
+    line-height: var(--sub-title-48-line-height);
+    color: var(--bk);
+}
+
+.automatic-flood-barrier-tab-menu {
+    margin-top: 4.8rem;
+    display: flex;
+    gap: 4.8rem;
+}
+
+.automatic-flood-barrier-tab-menu li {
+    position: relative;
+}
+
+.automatic-flood-barrier-tab-menu li + li::before {
+    content: '';
+    display: block;
+    width: 0.1rem;
+    height: 1.6rem;
+    background: var(--logo-gray);
+    position: absolute;
+    top: 50%;
+    left: -2.4rem;
+    transform: translateY(-50%);
+}
+
+.automatic-flood-barrier-tab-menu li a {
+    font-size: var(--p-18-size);
+    font-weight: var(--p-18-sb-weight);
+    line-height: var(--p-18-line-height);
+    color: var(--logo-gray);
+}
+
+.automatic-flood-barrier-tab-menu a.active {
+    color: var(--logo-sub-01);
+}
+
+.automatic-flood-barrier-tab-menu li a {
+    transition: 0.4s;
+}
+
+.automatic-flood-barrier-tab-menu li a:hover {
+    color: var(--logo-sub-01);
+}
+
+.automatic-flood-barrier-subtitle {
+    margin-top: 10rem;
+}
+
+.automatic-flood-barrier-subtitle h4::before {
+    content: '';
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url('/images/product/rubber-dam-ico1.svg') no-repeat 50%;
+    margin-bottom: 2.4rem;
+}
+
+.automatic-flood-barrier-subtitle p {
+    margin-top: 2.4rem;
+    font-size: var(--p-18-size);
+    font-weight: var(--p-18-weight);
+    line-height: var(--p-18-line-height);
+    color: var(--gray);
+}
+
+/* s: product3-1 */
+
+.automatic-flood-barrier-subtitle figure {
+    margin-top: 10rem;
+    width: 100%;
+    height: 62rem;
+}
+
+.automatic-flood-barrier-subtitle figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* s: product3-1 sec2 */
+
+.product3-1-sec2-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.rising-flood-barrier-operating-top {
+    margin-top: 10rem;
+}
+
+.rising-flood-barrier-operating-img {
+    margin-top: 10rem;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.rising-flood-barrier-operating-img li {
+    width: 46.4rem;
+    height: 27rem;
+}
+
+.rising-flood-barrier-operating-img li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product3-1-sec2-con .down-arrow span {
+    margin-top: 10rem;
+}
+
+.rising-flood-barrier-operating-bottom {
+    margin-top: 10rem;
+}
+
+.rising-flood-barrier-operating-ex {
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+}
+
+.rising-flood-barrier-operating-ex li {
+    width: 70.8rem;
+    height: 41.2rem;
+}
+
+.rising-flood-barrier-operating-ex li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* //e: product3-1 sec2 */
+
+.product3-1-sec3-con {
+    margin-top: 2.4rem;
+}
+
+.product3-1-sec3-con p {
+    font-size: var(--p-18-size);
+    font-weight: var(--p-18-weight);
+    line-height: var(--p-18-line-height);
+    color: var(--gray);
+}
+
+.product3-1-sec3-con figure {
+    margin-top: 10rem;
+}
+
+.product3-1-sec3-con figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* //e: product3-1 sec3 */
+
+.rising-flood-barrier-sec4 {
+    background: var(--bg-02);
+    padding: 16rem 0;
+}
+
+.rising-flood-barrier-sec4 figure {
+    margin-top: 10rem;
+    width: 100%;
+    height: 62rem;
+}
+
+.rising-flood-barrier-sec4 figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* //e: product3-1 sec4 */
+
+.rising-flood-barrier-features {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.rising-flood-barrier-features li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70.8rem;
+    height: 46.2rem;
+}
+
+.rising-flood-barrier-features li img {
+    width: 100%;
+    height: 41.2rem;
+}
+
+.rising-flood-barrier-features li p {
+    margin-top: 2.4rem;
+    font-size: var(--p-18-size);
+    font-weight: var(--p-18-sb-weight);
+    line-height: var(--p-18-line-height);
+    color: var(--bk);
+}
+
+/* //e: product3-1 sec5 */
+
+.rising-flood-barrier-sec6 {
+    position: relative; /* bg-layer */
+}
+
+.rising-flood-barrier-sec6 .bg-layer {
+    bottom: -16rem;
+}
+
+.structural-review {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.structural-review li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70.8rem;
+    height: 48.8rem;
+}
+
+.structural-review li img {
+    width: 100%;
+    height: 41.2rem;
+}
+
+.structural-review li p {
+    margin-top: 2.4rem;
+    font-size: var(--p-18-size);
+    font-weight: var(--p-18-sb-weight);
+    line-height: var(--p-18-line-height);
+    color: var(--bk);
+}
+
+/* //e: product3-1 sec6 */
+
+.automatic-flood-barrier-diagram {
+    background: var(--bg-01);
+    padding: 16rem 0 20rem 0;
+}
+
+.automatic-flood-barrier-diagram figure {
+    margin-top: 10rem;
+    width: 100%;
+    height: 62rem;
+}
+
+.automatic-flood-barrier-diagram figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* //e: product3-1 sec7 */
+
+/* //e: product3-1 */
+
+/* s: product3-2 */
+
+.sliding-flood-barrier-sec2 {
+    background: var(--bg-02);
+    padding: 16rem 0;
+}
+
+.sliding-flood-barrier-sec2 figure {
+    margin-top: 10rem;
+    width: 100%;
+    height: 62rem;
+}
+
+.sliding-flood-barrier-sec2 figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* //e: product3-2 sec2 */
+
+.sliding-flood-barrier-operating {
+    position: relative; /* bg-layer */
+}
+
+.sliding-flood-barrier-operating .bg-layer {
+    bottom: -16rem;
+}
+
+.sliding-flood-barrier-operating .operating-info {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.sliding-flood-barrier-operating .operating-info li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70.8rem;
+    height: 46.2rem;
+}
+
+.sliding-flood-barrier-operating .operating-info li img {
+    width: 100%;
+    height: 41.2rem;
+}
+
+.sliding-flood-barrier-operating .operating-info li p {
+    margin-top: 2.4rem;
+    font-size: var(--p-18-size);
+    font-weight: var(--p-18-sb-weight);
+    line-height: var(--p-18-line-height);
+    color: var(--bk);
+}
+
+/* //e: product3-2 sec3 */

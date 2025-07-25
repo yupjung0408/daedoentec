@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/product/</loc>
+    <lastmod>2025-07-25T14:04:28+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/cs/resources/2025-07-22-notice-16/</loc>
     <lastmod>2025-07-23T09:00:00+09:00</lastmod>
   </url><url>
@@ -14,9 +17,6 @@
     <loc>http://localhost:1313/cs/inquiry/</loc>
     <lastmod>2025-07-22T14:27:34+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product/</loc>
-    <lastmod>2025-07-22T14:05:52+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/product/product2-3/</loc>
     <lastmod>2025-07-22T14:05:52+09:00</lastmod>
   </url><url>
@@ -26,13 +26,13 @@
     <loc>http://localhost:1313/product/product2-1/</loc>
     <lastmod>2025-07-22T14:05:43+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product/hydraulic-weir/</loc>
+    <loc>http://localhost:1313/product/product1-3/</loc>
     <lastmod>2025-07-22T14:05:38+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product/steel-weir/</loc>
+    <loc>http://localhost:1313/product/product1-2/</loc>
     <lastmod>2025-07-22T14:05:26+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/product/movable-weir/</loc>
+    <loc>http://localhost:1313/product/product1-1/</loc>
     <lastmod>2025-07-22T14:04:28+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tech/</loc>
