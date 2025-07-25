@@ -5,7 +5,13 @@
     <loc>http://localhost:1313/cs/</loc>
     <lastmod>2025-07-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/cs/notice/2025-07-25-%EA%B0%80%EB%8F%99%EB%B3%B4/</loc>
+    <lastmod>2025-07-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/cs/notice/2025-07-25-%EA%B0%80%EB%8F%99%EB%B3%B4-%EC%B9%B4%ED%83%88%EB%A1%9C%EA%B7%B8/</loc>
+    <lastmod>2025-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cs/resources/2025-07-25-%EA%B0%80%EB%8F%99%EB%B3%B4-%EC%B9%B4%ED%83%88%EB%A1%9C%EA%B7%B8/</loc>
     <lastmod>2025-07-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/product/</loc>
