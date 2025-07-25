@@ -1,0 +1,20 @@
+[build]
+  publish = "public"
+  command = "hugo"
+
+[[headers]]
+  for = "/files/*.pdf"
+  [headers.values]
+  Content-Type = "application/pdf"
+  Content-Disposition = "inline"
+
+[[headers]]
+  for = "/files/*.zip"
+  [headers.values]
+  Content-Type = "application/zip"
+  Content-Disposition = "attachment"
+
+[[headers]]
+  for = "/files/*"
+  [headers.values]
+  Cache-Control = "public, max-age=31536000"
