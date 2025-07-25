@@ -69,7 +69,7 @@ const visualSwiper = new Swiper('.visual-slider', {
 /* s: product-slider */
 
 // 1. 페이지네이션 라벨 정의
-const productPaginationTitles = ['가동보', '홍수방어벽', '홍수방어문', '수문'];
+const productPaginationTitles = ['가동보', '홍수방어벽', '자동침수방어벽'];
 const PAGINATION_AUTOPLAY_DELAY = 4000; // Swiper autoplay와 동일하게 맞추세요!
 const SWIPER_SPEED = 1000;
 
