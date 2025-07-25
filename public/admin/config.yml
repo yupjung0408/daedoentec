@@ -27,7 +27,7 @@ collections:
             name: 'file'
             widget: 'file'
             required: false
-            media_folder: '/static/files'
+            media_folder: 'static/files'
             public_folder: '/files'
           - label: '이미지'
             name: 'img'
@@ -76,7 +76,7 @@ collections:
             name: 'file'
             widget: 'file'
             required: false
-            media_folder: '/static/files'
+            media_folder: 'static/files'
             public_folder: '/files'
           - label: 'Draft'
             name: 'draft'

@@ -4,23 +4,23 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <title>19</title>
+        <title>공지사항 | 고객센터 | DAEDO ENTEC</title>
 
         
-        <meta name="description" content="기후변화에 대응하는 스마트 수자원 방재 기술" />
+        <meta name="description" content="㈜대도엔텍 공지사항 - 제품 출시, 시공 사례, 기술소식, 공지 및 안내사항을 신속하게 알려드립니다. 최신 소식과 공지정보를 확인하세요." />
 
         
-        <meta name="keywords" content="대도엔텍, 고무보, 수문, 방재 기술, 스마트 수자원, 기계설비, 하천 구조물" />
+        <meta name="keywords" content="[대도엔텍, 공지사항, Notice, 새소식, 안내, 공지, 고객센터, 제품소식, 시공사례, 기술소식, 업데이트, 홍보, Flood Barrier, 가동보, 방어벽]" />
 
         
         <meta name="author" content="㈜대도엔텍" />
 
         
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="19" />
-        <meta property="og:description" content="" />
-        <meta property="og:image" content="" />
-        <meta property="og:url" content="http://localhost:1313/cs/notice/2025-07-22-notice-19/" />
+        <meta property="og:title" content="공지사항 | 고객센터 | ㈜대도엔텍" />
+        <meta property="og:description" content="㈜대도엔텍의 최신 공지와 소식. 신제품, 시공·기술 안내 등 빠르고 정확한 정보를 확인하세요." />
+        <meta property="og:image" content="/images/cs/cs-visual-bg1.png" />
+        <meta property="og:url" content="https://daedoentec.netlify.app/cs/notice/" />
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="/css/reset.css" />
@@ -128,6 +128,9 @@
 
 
 
+
+
+
 <section class="notice">
     <div class="container">
         <div class="notice-top">
@@ -137,57 +140,67 @@
                     최신 소식을 전해드립니다.
                 </h3>
             </div>
-        </div>
 
-        <div class="notice-view">
-            <div class="notice-view-title">
-                <h4>19</h4>
-                <div class="notice-view-number">
-                    <p>2025-07-10</p>
-                    
+            <div class="notice-search">
+                <div class="search-left">
+                    <button class="search-toggle">제목+내용</button>
                 </div>
-            </div>
 
-            <div class="notice-download">
-                
-                <strong>첨부파일</strong>
-                <a href="/files/2019Catalog%eb%8c%80%eb%8f%84%ec%97%94%ed%85%8d.pdf" class="download-btn" download> 2019Catalog대도엔텍.pdf<span></span> </a>
-                
-            </div>
-
-            <div class="notice-view-box">
-                
-                <img src="/images/cs/notice-view-pic.png" alt="19" />
-                
-                <p>19번째 공지사항</p>
-                <div></div>
-            </div>
-
-            
-            <div class="notice-view-prev">
-                
-                <a class="view-prev-btn" href="/cs/notice/2025-07-22-notice-18/">이전글</a>
-                <div class="notice-view-prev-title">
-                    <strong>18</strong>
-                    <p>2025-07-09</p>
+                <div class="search-right">
+                    <div class="search-input-wrap">
+                        <input type="text" placeholder="검색어를 입력해주세요." />
+                        <span class="search-icon"></span>
+                    </div>
                 </div>
-                
-            </div>
-
-            
-            <div class="notice-view-next">
-                
-                <a class="view-next-btn" href="/cs/notice/2025-07-22-notice-20/">다음글</a>
-                <div class="notice-view-next-title">
-                    <strong>20</strong>
-                    <p>2025-07-11</p>
-                </div>
-                
             </div>
         </div>
 
-        <div class="back-list-btn">
-            <a href="/cs/notice/" class="btn">목록</a>
+        <div class="notice-bottom">
+            <div class="notic-list-total">
+                <p>Total <span>5</span></p>
+            </div>
+
+            <ul class="notice-list" id="noticeList">
+                
+                <li>
+                    <a href="/cs/notice/2025-07-22-notice-1/" class="notice-link">
+                        <dl>
+                            <dt>1</dt>
+                            <dd>1번째 공지사항</dd>
+                        </dl>
+                        <p>2025-05-19</p>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="notice-list-pagination">
+            
+            <a
+                class="pagination-prev"
+                href="/cs/notice/page/4/"
+                style="color: var(--logo-main);"
+                id="btnPrev"
+                ><span></span
+            ></a>
+            <div class="btn-number" id="btnNumber">
+                       
+                <a class="pagination-btn" href="/cs/notice/page/3/">3</a>
+                 
+                <a class="pagination-btn" href="/cs/notice/page/4/">4</a>
+                 
+                <a class="pagination-btn active" href="/cs/notice/page/5/">5</a>
+                
+            </div>
+            
+            <a
+                class="pagination-next"
+                href=""
+                style="color: var(--bk); pointer-events: none; opacity: 0.5;"
+                id="btnNext"
+                ><span></span
+            ></a>
         </div>
     </div>
 </section>
